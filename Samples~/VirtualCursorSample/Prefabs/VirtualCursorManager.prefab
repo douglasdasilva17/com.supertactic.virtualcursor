@@ -31,7 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3168384605083270463}
+  - {fileID: 2164896240696262830}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4950538590633642402
@@ -56,12 +56,12 @@ MonoBehaviour:
   canvas: {fileID: 0}
   canvasRectTransform: {fileID: 0}
   playerInput: {fileID: 1066305267807700831}
+  clickParticle: {fileID: 2079488605066801614}
+  virtualCursorPositionOffset: {x: 0, y: 0, z: 0}
+  cursorPositionOffset: {x: -0.25, y: 0.25, z: 0}
   onControlSchemeChanged:
     m_PersistentCalls:
       m_Calls: []
-  clickParticle: {fileID: 2965848459144383583}
-  virtualCursorPositionOffset: {x: 0, y: 0, z: 0}
-  cursorPositionOffset: {x: -0.25, y: 0.25, z: 0}
 --- !u!114 &1066305267807700831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_DefaultActionMap: UI
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!1001 &3163905826039683065
+--- !u!1001 &2169449958466923112
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -103,7 +103,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1804410945853960, guid: 0445283ca0e82d8428019d99dde8dc1a, type: 3}
       propertyPath: m_Name
-      value: FX_ClickParticle
+      value: ClickParticle
       objectReference: {fileID: 0}
     - target: {fileID: 4554826208750278, guid: 0445283ca0e82d8428019d99dde8dc1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -150,15 +150,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0445283ca0e82d8428019d99dde8dc1a, type: 3}
---- !u!198 &2965848459144383583 stripped
+--- !u!198 &2079488605066801614 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198366055323835302, guid: 0445283ca0e82d8428019d99dde8dc1a,
     type: 3}
-  m_PrefabInstance: {fileID: 3163905826039683065}
+  m_PrefabInstance: {fileID: 2169449958466923112}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3168384605083270463 stripped
+--- !u!4 &2164896240696262830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4554826208750278, guid: 0445283ca0e82d8428019d99dde8dc1a,
     type: 3}
-  m_PrefabInstance: {fileID: 3163905826039683065}
+  m_PrefabInstance: {fileID: 2169449958466923112}
   m_PrefabAsset: {fileID: 0}
