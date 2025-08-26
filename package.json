@@ -1,7 +1,7 @@
 {
   "name": "com.supertactic.virtualcursor",
   "displayName": "Supertactic Virtual Cursor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Unity package that provides a customizable virtual cursor system for UI navigation, fully compatible with UGUI and controller/keyboard input.",
   "unity": "2022.3",
   "dependencies": {
