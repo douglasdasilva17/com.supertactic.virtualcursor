@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Supertactic.VirtualCursor {
-    public class CursorTint : MonoBehaviour{
+namespace Supertactic.VirtualCursor
+{
+    public class CursorTint : MonoBehaviour
+    {
         [TextArea]
         public string note = "Place this script on the root of a cursor style and it will check all the child objects that need to be tinted. Remember to use the 'TineBypass' script to avoid having an image component colored!";
         Transform[] allChildren;
@@ -14,35 +16,49 @@ namespace Supertactic.VirtualCursor {
         [Tooltip("If true, the CursorControl tint override won't affect this cursor and you can choose individual colors and customization.")]
         public bool localTintOverride = false;
 
-        public void Start(){
+        public void Start()
+        {
             allChildren = GetComponentsInChildren<Transform>();
             //cursorController = transform.root.GetComponent<CursorController>();
 
-            foreach (Transform child in allChildren){
-                if(child.GetComponent<Image>() != null){
-                    if(child.GetComponent<Image>().sprite != null){
-                         if(overrideTint){
-                             child.GetComponent<Image>().color = hoverTint;
-                         }else{
-                             child.GetComponent<Image>().color = tint;
-                         }
+            foreach (Transform child in allChildren)
+            {
+                if (child.GetComponent<Image>() != null)
+                {
+                    if (child.GetComponent<Image>().sprite != null)
+                    {
+                        if (overrideTint)
+                        {
+                            child.GetComponent<Image>().color = hoverTint;
+                        }
+                        else
+                        {
+                            child.GetComponent<Image>().color = tint;
+                        }
                     }
                 }
             }
         }
 
-        public void SetColor(Color tint){
+        public void SetColor(Color tint)
+        {
             allChildren = GetComponentsInChildren<Transform>();
-           // cursorController = transform.root.GetComponent<CursorController>();
+            // cursorController = transform.root.GetComponent<CursorController>();
 
-            foreach (Transform child in allChildren){
-                if(child.GetComponent<Image>() != null){
-                    if(child.GetComponent<Image>().sprite != null){
-                         if(overrideTint){
-                             child.GetComponent<Image>().color = hoverTint;
-                         }else{
-                             child.GetComponent<Image>().color = tint;
-                         }
+            foreach (Transform child in allChildren)
+            {
+                if (child.GetComponent<Image>() != null)
+                {
+                    if (child.GetComponent<Image>().sprite != null)
+                    {
+                        if (overrideTint)
+                        {
+                            child.GetComponent<Image>().color = hoverTint;
+                        }
+                        else
+                        {
+                            child.GetComponent<Image>().color = tint;
+                        }
                     }
                 }
             }
