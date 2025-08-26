@@ -21,8 +21,8 @@ It is designed to work seamlessly with **UGUI** and supports both **controller**
 2. Click **+ > Add package from git URL...**  
 3. Paste the following line and click **Add**:  
 
-```
-[https://github.com/supertactic/com.supertactic.virtualcursor.git](https://github.com/supertactic/com.supertactic.virtualcursor.git)
+```json
+https://github.com/douglasdasilva17/com.supertactic.virtualcursor.git
 
 ```
 
